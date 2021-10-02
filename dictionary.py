@@ -1,4 +1,3 @@
-
 dictionary = {
 				'hello':'gesture greeting',
 				'good':'achha'
