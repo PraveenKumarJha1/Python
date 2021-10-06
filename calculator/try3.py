@@ -1,0 +1,20 @@
+sum=0
+i=1
+dict_1 ={"Item_Name" : "Item_Price"}
+while True:
+    item_name =input("[+] please enter the Item Name or q to quit :  ")
+        
+    if item_name == 'q':
+        print(f"\n[+] Your bill amount is {sum} . Thanks for shopping here \n")
+        break        
+    else:
+        item_price =input("Please enter Item Price $ ")
+        sum = sum+float(item_price)
+        dict_1[item_name]= item_price
+        print("order sum till now {}" .format(sum))
+
+print ("{:<10} {:<40}".format('NAME', 'Price'))
+
+for key, value in dict_1.items():
+    
+    print ("{:<10} {:<40}".format(key, value))
